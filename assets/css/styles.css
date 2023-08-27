@@ -2,6 +2,10 @@
     box-sizing: border-box;
 }
 
+:root {
+    --hero-bg: #10375c;
+}
+
 html {
     font-size: 62.5%;
 }
@@ -9,4 +13,258 @@ html {
 body {
     font-size: 1.6rem;
     font-family: "Sora", sans-serif;
+}
+
+/*================ Common =================== */
+.container {
+    width: 1170px;
+    max-width: calc(100% - 48px);
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+.btn {
+    --height: 60px;
+    display: inline-block;
+    min-width: 205px;
+    height: -height;
+    padding: 0 20px;
+    border-radius: 99px;
+    border: 1px solid #2e80ce;
+    font-size: 1.6rem;
+    font-weight: 400;
+    text-align: center;
+    line-height: var(--height);
+    color: #fff;
+    background: #2e80ce;
+}
+
+.btn:hover {
+    opacity: 0.9;
+    cursor: pointer;
+}
+
+/* =================== Hero =================== */
+.hero {
+    min-height: 100vh;
+    padding-top: 30px;
+    background-color: var(--hero-bg);
+    color: #c9d2da;
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* ==== Logo ==== */
+.logo {
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+}
+
+.logo__text {
+    margin-left: 0.6em;
+    text-align: right;
+}
+
+.logo__brand--big {
+    font-size: 1.8em;
+    font-weight: 400;
+}
+
+.logo__brand--small {
+    font-size: 1.2em;
+    font-weight: 300;
+}
+
+/* ==== Navbar ==== */
+.navbar {
+    display: flex;
+}
+.action__login,
+.navbar__link {
+    padding: 4px 21px;
+    font-size: 1.6rem;
+    font-weight: 300;
+    color: #c9d2da;
+}
+
+.navbar__link--action:hover {
+    text-shadow: 1px 0 0 currentColor;
+    color: #fff;
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+
+.navbar__link--action::before {
+    content: "";
+    display: inline-block;
+    position: relative;
+    left: -8px;
+    top: -2px;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: #fff;
+}
+
+/* ==== buton ===== */
+.action__signup {
+    --height: 44px;
+    min-width: 104px;
+}
+
+/* ====================== Hero-Main content ====================== */
+/* hero-content */
+.hero__main--content {
+    display: flex;
+    align-items: center;
+    margin-top: 76px;
+}
+
+.hero-content {
+    width: 50%;
+    height: 420px;
+}
+
+.content__heading {
+    color: #fff;
+    font-family: Sora;
+    font-size: 7rem;
+    font-weight: 600;
+    line-height: 114.286%;
+}
+
+.content__description {
+    width: 468px;
+    margin-top: 22px;
+    color: #c9d2da;
+    font-family: Sora;
+    font-size: 1.8rem;
+    font-weight: 300;
+    line-height: 166.667%;
+}
+
+.hero-box {
+    display: flex;
+    margin-top: 38px;
+    align-items: center;
+}
+
+.hero-box__btn {
+    margin-right: 38px;
+}
+
+/* Hero media */
+.hero-media {
+    display: flex;
+    align-items: center;
+}
+
+.media__image1 {
+    width: 330px;
+    height: 540px;
+    object-fit: cover;
+}
+
+.media__image2 {
+    width: 210px;
+    height: 410px;
+    object-fit: cover;
+}
+
+/* ======================= Service ======================= */
+.service__heading {
+    margin-top: 170px;
+    color: #10375c;
+    text-align: center;
+    font-size: 50px;
+    font-weight: 600;
+    line-height: 120%;
+}
+
+.service__heading--description {
+    width: 468px;
+    margin: auto;
+    color: #575f66;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 166.667%;
+}
+
+.service__box--2 {
+    display: flex;
+    align-items: center;
+    margin-top: 70px;
+}
+
+.service-image {
+    width: 570px;
+    height: 570px;
+    border-radius: 12px;
+    object-fit: cover;
+}
+
+.service__pack {
+    margin-left: 130px;
+}
+
+.service__pack--1,
+.service__pack--2,
+.service__pack--3 {
+    display: flex;
+    align-items: center;
+}
+
+.service__name {
+    color: #10375c;
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+.service__name--ds {
+    color: #575f66;
+    font-size: 1.6rem;
+    font-weight: 300;
+    line-height: 175%;
+}
+
+.all-service {
+    margin-top: 75px;
+}
+
+/* ========================= work ========================= */
+.work {
+    padding-top: 100px;
+    background: #f6fbff;
+}
+
+.work__text {
+    color: #10375c;
+    font-family: Sora;
+    font-size: 50px;
+    font-weight: 600;
+}
+
+.work__text-decs {
+    width: 468px;
+    margin-top: 18px;
+    color: #575f66;
+    font-family: Sora;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 166.667%;
+}
+
+.work__box {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
 }
