@@ -243,6 +243,7 @@ a {
 /* ========================= work ========================= */
 .work {
     padding-top: 100px;
+    padding-bottom: 100px;
     background: #f6fbff;
 }
 
@@ -265,6 +266,183 @@ a {
 
 .work__box {
     display: grid;
+    margin-top: 70px;
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
+}
+
+.frame {
+    padding: 43px 0 0 42px;
+    border: 16px solid #eaf6ff;
+}
+
+.frame:hover {
+    border-color: #2e80ce;
+}
+
+.search__text,
+.find__text,
+.treatment__text {
+    margin-top: 18px;
+    color: #10375c;
+    font-size: 2.6rem;
+    font-weight: 600;
+    line-height: 138.462%;
+}
+
+.search__text--desc,
+.find__text--desc,
+.treatment__text--desc {
+    width: 254px;
+    margin-top: 28px;
+    color: #575f66;
+    font-size: 1.6rem;
+    font-weight: 300;
+    line-height: 175%;
+}
+
+.learn-more {
+    display: block;
+    margin-top: 18px;
+    margin-bottom: 43px;
+    color: #575f66;
+    font-size: 1.6rem;
+    font-weight: 300;
+    line-height: 175%;
+}
+
+/* ================= Commit =================== */
+.commit {
+    padding-top: 170px;
+}
+
+.commit-box {
+    display: flex;
+    align-items: center;
+}
+
+.img-box {
+    width: 50%;
+}
+
+.commit-image1 {
+    width: 512px;
+    height: 370px;
+    object-fit: cover;
+    position: absolute;
+    border-radius: 6px;
+    box-shadow: 0px 14px 28px 0px rgba(0, 0, 0, 0.07);
+}
+
+.commit-image2 {
+    width: 332px;
+    height: 370px;
+    object-fit: cover;
+    position: relative;
+    border-radius: 6px;
+    top: 121px;
+    left: 238px;
+}
+
+.text-box {
+    width: 50%;
+    padding-left: 130px;
+}
+
+.commit__heading {
+    width: 470px;
+    color: #10375c;
+    font-size: 5rem;
+    font-weight: 600;
+    line-height: 120%;
+}
+
+.commit__heading--desc {
+    margin-top: 18px;
+    width: 468px;
+    color: #575f66;
+    font-size: 1.8rem;
+    font-weight: 300;
+    line-height: 166.667%; /* 166.667% */
+}
+
+.commit-btn {
+    margin-top: 38px;
+}
+
+/* ==================== Team ======================= */
+.team {
+    margin-top: 253px;
+}
+
+.team__heading {
+    color: #10375c;
+    text-align: center;
+    font-size: 5rem;
+    font-weight: 600;
+    line-height: 120%;
+}
+
+.team__btn {
+    margin-top: 38px;
+    margin-left: calc((100% - 205px) / 2);
+    margin-right: calc((100% - 205px) / 2);
+}
+
+.team__box {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    margin-top: 70px;
+}
+
+.member__img {
+    width: 270px;
+    height: 318px;
+    border-radius: 6px;
+    object-fit: cover;
+}
+
+.member__name {
+    color: #10375c;
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 175%;
+}
+
+.member__desc {
+    color: #575f66;
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: 300;
+    line-height: 185.714%;
+}
+
+.team__buton {
+    margin-top: 38px;
+}
+
+.team__btn--next,
+.team__btn--back {
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+    border-radius: 99px;
+    text-align: center;
+    line-height: 36px;
+    background-color: #fff;
+    border: 1px solid #575f66;
+}
+
+.team__btn--next:hover,
+.team__btn--back:hover {
+    background-color: #2e80ce;
+    scroll-behavior: smooth;
+    cursor: pointer;
+}
+
+.team__btn--next {
+    margin-left: calc((100% - 72px + 18px) / 2);
+    margin-right: 18px;
 }
